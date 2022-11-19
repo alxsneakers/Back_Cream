@@ -1,12 +1,14 @@
 'use strict'
 
+// imports de mongoose
 const mongoose= require('mongoose');
 const Schema = mongoose.Schema;
 
+// esquema para la coleccion (cliente)
 const ClienteSchema= Schema({
     nombre: {
         type: String,
-        required: true
+        required: true // campo obligatorio
     },
     apellidos: {
         type: String,
